@@ -1,0 +1,204 @@
+2018-01-26_11:31:17.38653 2018-01-26T11:31:17.386Z 383 TID-oxpir2z1k INFO: Booting Sidekiq 5.0.5 with redis options {:host=>"redis", :port=>6379, :password=>nil, :namespace=>"resque:gitlab", :id=>"Sidekiq-server-PID-383", :url=>nil}
+2018-01-26_11:31:17.77952 2018-01-26T11:31:17.779Z 383 TID-oxpir2z1k INFO: Cron Jobs - add job with name: stuck_ci_jobs_worker
+2018-01-26_11:31:17.90626 2018-01-26T11:31:17.906Z 383 TID-oxpir2z1k INFO: Cron Jobs - add job with name: expire_build_artifacts_worker
+2018-01-26_11:31:17.95338 2018-01-26T11:31:17.952Z 383 TID-oxpir2z1k INFO: Cron Jobs - add job with name: pipeline_schedule_worker
+2018-01-26_11:31:18.00971 2018-01-26T11:31:18.008Z 383 TID-oxpir2z1k INFO: Cron Jobs - add job with name: repository_check_worker
+2018-01-26_11:31:18.10063 2018-01-26T11:31:18.099Z 383 TID-oxpir2z1k INFO: Cron Jobs - add job with name: admin_email_worker
+2018-01-26_11:31:18.14057 2018-01-26T11:31:18.139Z 383 TID-oxpir2z1k INFO: Cron Jobs - add job with name: repository_archive_cache_worker
+2018-01-26_11:31:18.17742 2018-01-26T11:31:18.176Z 383 TID-oxpir2z1k INFO: Cron Jobs - add job with name: import_export_project_cleanup_worker
+2018-01-26_11:31:18.21712 2018-01-26T11:31:18.216Z 383 TID-oxpir2z1k INFO: Cron Jobs - add job with name: requests_profiles_worker
+2018-01-26_11:31:18.27558 2018-01-26T11:31:18.274Z 383 TID-oxpir2z1k INFO: Cron Jobs - add job with name: remove_expired_members_worker
+2018-01-26_11:31:18.32942 2018-01-26T11:31:18.328Z 383 TID-oxpir2z1k INFO: Cron Jobs - add job with name: remove_expired_group_links_worker
+2018-01-26_11:31:18.38324 2018-01-26T11:31:18.382Z 383 TID-oxpir2z1k INFO: Cron Jobs - add job with name: prune_old_events_worker
+2018-01-26_11:31:18.43791 2018-01-26T11:31:18.437Z 383 TID-oxpir2z1k INFO: Cron Jobs - add job with name: trending_projects_worker
+2018-01-26_11:31:18.51711 2018-01-26T11:31:18.516Z 383 TID-oxpir2z1k INFO: Cron Jobs - add job with name: remove_unreferenced_lfs_objects_worker
+2018-01-26_11:31:18.57194 2018-01-26T11:31:18.570Z 383 TID-oxpir2z1k INFO: Cron Jobs - add job with name: stuck_import_jobs_worker
+2018-01-26_11:31:18.61395 2018-01-26T11:31:18.613Z 383 TID-oxpir2z1k INFO: Cron Jobs - add job with name: gitlab_usage_ping_worker
+2018-01-26_11:31:18.65664 2018-01-26T11:31:18.656Z 383 TID-oxpir2z1k INFO: Cron Jobs - add job with name: schedule_update_user_activity_worker
+2018-01-26_11:31:18.69472 2018-01-26T11:31:18.694Z 383 TID-oxpir2z1k INFO: Cron Jobs - add job with name: remove_old_web_hook_logs_worker
+2018-01-26_11:31:18.74517 2018-01-26T11:31:18.744Z 383 TID-oxpir2z1k INFO: Cron Jobs - add job with name: stuck_merge_jobs_worker
+2018-01-26_11:31:38.51379 2018-01-26T11:31:38.513Z 383 TID-oxpir2z1k INFO: Running in ruby 2.3.6p384 (2017-12-14 revision 61254) [x86_64-linux]
+2018-01-26_11:31:38.51419 2018-01-26T11:31:38.513Z 383 TID-oxpir2z1k INFO: See LICENSE and the LGPL-3.0 for licensing details.
+2018-01-26_11:31:38.51443 2018-01-26T11:31:38.513Z 383 TID-oxpir2z1k INFO: Upgrade to Sidekiq Pro for more features and support: http://sidekiq.org
+2018-01-26_11:31:38.51689 2018-01-26T11:31:38.516Z 383 TID-oxpir2z1k INFO: Starting processing, hit Ctrl-C to stop
+2018-01-26_11:31:38.52516 2018-01-26T11:31:38.524Z 383 TID-oxpir2z1k INFO: Listening on queues ["authorized_projects", "background_migration", "create_gpg_signature", "cronjob", "cronjob:admin_email", "cronjob:expire_build_artifacts", "cronjob:gitlab_usage_ping", "cronjob:import_export_project_cleanup", "cronjob:pipeline_schedule", "cronjob:prune_old_events", "cronjob:remove_expired_group_links", "cronjob:remove_expired_members", "cronjob:remove_old_web_hook_logs", "cronjob:remove_unreferenced_lfs_objects", "cronjob:repository_archive_cache", "cronjob:repository_check_batch", "cronjob:requests_profiles", "cronjob:schedule_update_user_activity", "cronjob:stuck_ci_jobs", "cronjob:stuck_import_jobs", "cronjob:stuck_merge_jobs", "cronjob:trending_projects", "default", "delete_merged_branches", "delete_user", "email_receiver", "emails_on_push", "expire_build_instance_artifacts", "gcp_cluster", "gcp_cluster:check_gcp_project_billing", "gcp_cluster:cluster_install_app", "gcp_cluster:cluster_provision", "gcp_cluster:cluster_wait_for_app_installation", "gcp_cluster:wait_for_cluster_creation", "git_garbage_collect", "github_import_advance_stage", "github_importer", "github_importer:github_import_import_diff_note", "github_importer:github_import_import_issue", "github_importer:github_import_import_note", "github_importer:github_import_import_pull_request", "github_importer:github_import_refresh_import_jid", "github_importer:github_import_stage_finish_import", "github_importer:github_import_stage_import_base_data", "github_importer:github_import_stage_import_issues_and_diff_notes", "github_importer:github_import_stage_import_notes", "github_importer:github_import_stage_import_pull_requests", "github_importer:github_import_stage_import_repository", "gitlab_shell", "group_destroy", "invalid_gpg_signature_update", "irker", "mailers", "merge", "namespaceless_project_destroy", "new_issue", "new_merge_request", "new_note", "pages", "pipeline_cache", "pipeline_cache:expire_job_cache", "pipeline_cache:expire_pipeline_cache", "pipeline_creation", "pipeline_creation:create_pipeline", "pipeline_creation:run_pipeline_schedule", "pipeline_default", "pipeline_default:build_coverage", "pipeline_default:build_trace_sections", "pipeline_default:pipeline_metrics", "pipeline_default:pipeline_notification", "pipeline_default:update_head_pipeline_for_merge_request", "pipeline_hooks", "pipeline_hooks:build_hooks", "pipeline_hooks:pipeline_hooks", "pipeline_processing", "pipeline_processing:build_finished", "pipeline_processing:build_queue", "pipeline_processing:build_success", "pipeline_processing:pipeline_process", "pipeline_processing:pipeline_success", "pipeline_processing:pipeline_update", "pipeline_processing:stage_update", "post_receive", "process_commit", "project_cache", "project_destroy", "project_export", "project_migrate_hashed_storage", "project_service", "propagate_service_template", "reactive_caching", "rebase", "repository_check", "repository_check:repository_check_clear", "repository_check:repository_check_single_repository", "repository_fork", "repository_import", "storage_migrator", "system_hook_push", "update_merge_requests", "update_user_activity", "upload_checksum", "web_hook"]
+2018-01-26_11:43:28.66975 2018-01-26T11:43:28.659Z 383 TID-oxpcyzvco BuildHooksWorker JID-a2d28bc9e746581d6ed03a88 INFO: start
+2018-01-26_11:43:28.83939 2018-01-26T11:43:28.839Z 383 TID-oxpcyzxe0 PipelineUpdateWorker JID-3984095fc947b586c51fb95e INFO: start
+2018-01-26_11:43:28.84924 2018-01-26T11:43:28.848Z 383 TID-oxpcyzxwc StageUpdateWorker JID-70b3f47f30c184d7b62e81a7 INFO: start
+2018-01-26_11:43:28.86330 2018-01-26T11:43:28.863Z 383 TID-oxpcyzv0g ExpireJobCacheWorker JID-903cf52b68b9aef445387729 INFO: start
+2018-01-26_11:43:28.99631 2018-01-26T11:43:28.994Z 383 TID-oxpcyzwvo PipelineUpdateWorker JID-470c744d8ecdba01401baa29 INFO: start
+2018-01-26_11:43:29.01513 2018-01-26T11:43:29.014Z 383 TID-oxpcyzuuc StageUpdateWorker JID-6af5bbeea291979f9a1864f5 INFO: start
+2018-01-26_11:43:29.02177 2018-01-26T11:43:29.014Z 383 TID-oxpcyzwjg ExpireJobCacheWorker JID-e22bee99e98adc6f743fab9f INFO: start
+2018-01-26_11:43:29.19802 2018-01-26T11:43:29.197Z 383 TID-oxpcyzuo8 ExpireJobCacheWorker JID-d8224fd7aca4ed22151f521a INFO: start
+2018-01-26_11:43:29.19994 2018-01-26T11:43:29.199Z 383 TID-oxpcyzui4 PipelineUpdateWorker JID-78a33b9e52a6694cae0cc2dc INFO: start
+2018-01-26_11:43:29.21144 2018-01-26T11:43:29.199Z 383 TID-oxpcyzw14 StageUpdateWorker JID-a1508910a8ebc2cb2b729502 INFO: start
+2018-01-26_11:43:30.26310 2018-01-26T11:43:30.262Z 383 TID-oxpcyzwdc PipelineUpdateWorker JID-c5ae88620f23e2dd7c2f1a67 INFO: start
+2018-01-26_11:43:30.26548 2018-01-26T11:43:30.264Z 383 TID-oxpcyzy8k StageUpdateWorker JID-767dbba92a2b567b1b7eac1f INFO: start
+2018-01-26_11:43:30.26600 2018-01-26T11:43:30.265Z 383 TID-oxpcyzv6k BuildQueueWorker JID-c0a381d74ad27371ffbd7ed9 INFO: start
+2018-01-26_11:43:30.35073 2018-01-26T11:43:30.350Z 383 TID-oxpcyzx1s ExpireJobCacheWorker JID-4511ee5c0c743cde6b504544 INFO: start
+2018-01-26_11:43:31.34604 2018-01-26T11:43:31.333Z 383 TID-oxpcyzxk4 PipelineHooksWorker JID-9422142a7ce749b5a7a58c2c INFO: start
+2018-01-26_11:43:31.46287 2018-01-26T11:43:31.460Z 383 TID-oxpcyzy2g ExpirePipelineCacheWorker JID-8364d569944dac5ec8c6f9b3 INFO: start
+2018-01-26_11:43:34.66550 2018-01-26T11:43:34.664Z 383 TID-oxpcyzxwc StageUpdateWorker JID-70b3f47f30c184d7b62e81a7 INFO: done: 5.814 sec
+2018-01-26_11:43:34.66791 2018-01-26T11:43:34.667Z 383 TID-oxpcyzv0g ExpireJobCacheWorker JID-903cf52b68b9aef445387729 INFO: done: 5.805 sec
+2018-01-26_11:43:34.67104 2018-01-26T11:43:34.670Z 383 TID-oxpcyzwjg ExpireJobCacheWorker JID-e22bee99e98adc6f743fab9f INFO: done: 5.656 sec
+2018-01-26_11:43:34.67270 2018-01-26T11:43:34.672Z 383 TID-oxpcyzuo8 ExpireJobCacheWorker JID-d8224fd7aca4ed22151f521a INFO: done: 5.474 sec
+2018-01-26_11:43:34.67377 2018-01-26T11:43:34.673Z 383 TID-oxpcyzxe0 PipelineUpdateWorker JID-3984095fc947b586c51fb95e INFO: done: 5.834 sec
+2018-01-26_11:43:34.69907 2018-01-26T11:43:34.698Z 383 TID-oxpcyzuuc StageUpdateWorker JID-6af5bbeea291979f9a1864f5 INFO: done: 5.685 sec
+2018-01-26_11:43:34.71272 2018-01-26T11:43:34.706Z 383 TID-oxpcyzw14 StageUpdateWorker JID-a1508910a8ebc2cb2b729502 INFO: done: 5.507 sec
+2018-01-26_11:43:34.74252 2018-01-26T11:43:34.740Z 383 TID-oxpcyzx1s ExpireJobCacheWorker JID-4511ee5c0c743cde6b504544 INFO: done: 4.39 sec
+2018-01-26_11:43:34.74881 2018-01-26T11:43:34.748Z 383 TID-oxpcyzvco BuildHooksWorker JID-a2d28bc9e746581d6ed03a88 INFO: done: 6.09 sec
+2018-01-26_11:43:34.75446 2018-01-26T11:43:34.748Z 383 TID-oxpcyzy8k StageUpdateWorker JID-767dbba92a2b567b1b7eac1f INFO: done: 4.484 sec
+2018-01-26_11:43:34.77572 2018-01-26T11:43:34.774Z 383 TID-oxpcyzv6k BuildQueueWorker JID-c0a381d74ad27371ffbd7ed9 INFO: done: 4.51 sec
+2018-01-26_11:43:35.01641 2018-01-26T11:43:35.016Z 383 TID-oxpcyzwvo PipelineUpdateWorker JID-470c744d8ecdba01401baa29 INFO: done: 6.021 sec
+2018-01-26_11:43:35.01868 2018-01-26T11:43:35.017Z 383 TID-oxpcyzui4 PipelineUpdateWorker JID-78a33b9e52a6694cae0cc2dc INFO: done: 5.818 sec
+2018-01-26_11:43:35.07952 2018-01-26T11:43:35.079Z 383 TID-oxpcyzwdc PipelineUpdateWorker JID-c5ae88620f23e2dd7c2f1a67 INFO: done: 4.817 sec
+2018-01-26_11:43:35.29919 2018-01-26T11:43:35.298Z 383 TID-oxpcyzvow PipelineUpdateWorker JID-414ff75951e54899b52667de INFO: start
+2018-01-26_11:43:35.30121 2018-01-26T11:43:35.299Z 383 TID-oxpcyzxq8 StageUpdateWorker JID-338fb0b60a271a5a5010314b INFO: start
+2018-01-26_11:43:35.30187 2018-01-26T11:43:35.300Z 383 TID-oxpcyzvis ExpireJobCacheWorker JID-f4bc9b559d894c397e1bfdd4 INFO: start
+2018-01-26_11:43:35.30221 2018-01-26T11:43:35.300Z 383 TID-oxpcyzvv0 BuildHooksWorker JID-8d6c8016c109a5280243f2bc INFO: start
+2018-01-26_11:43:35.40542 2018-01-26T11:43:35.405Z 383 TID-oxpcyzy2g ExpirePipelineCacheWorker JID-8364d569944dac5ec8c6f9b3 INFO: done: 3.944 sec
+2018-01-26_11:43:35.80236 2018-01-26T11:43:35.801Z 383 TID-oxpcyzvis ExpireJobCacheWorker JID-f4bc9b559d894c397e1bfdd4 INFO: done: 0.501 sec
+2018-01-26_11:43:35.93394 2018-01-26T11:43:35.933Z 383 TID-oxpcyzxq8 StageUpdateWorker JID-338fb0b60a271a5a5010314b INFO: done: 0.634 sec
+2018-01-26_11:43:35.97246 2018-01-26T11:43:35.965Z 383 TID-oxpcyzvow PipelineUpdateWorker JID-414ff75951e54899b52667de INFO: done: 0.667 sec
+2018-01-26_11:43:36.63875 2018-01-26T11:43:36.634Z 383 TID-oxpcyzvv0 BuildHooksWorker JID-8d6c8016c109a5280243f2bc INFO: done: 1.334 sec
+2018-01-26_11:43:36.85535 2018-01-26T11:43:36.854Z 383 TID-oxpcyzxk4 PipelineHooksWorker JID-9422142a7ce749b5a7a58c2c INFO: done: 5.522 sec
+2018-01-26_11:43:48.48335 2018-01-26T11:43:48.482Z 383 TID-oxpcyzxwc BuildFinishedWorker JID-807e5d62a69259c4533bb982 INFO: start
+2018-01-26_11:43:48.50155 2018-01-26T11:43:48.501Z 383 TID-oxpcyzwdc PipelineProcessWorker JID-d65fe8dd924416972b43283c INFO: start
+2018-01-26_11:43:48.50289 2018-01-26T11:43:48.502Z 383 TID-oxpcyzy2g StageUpdateWorker JID-7203f5889c3714a74445408c INFO: start
+2018-01-26_11:43:48.53612 2018-01-26T11:43:48.535Z 383 TID-oxpcyzui4 ExpireJobCacheWorker JID-70f77d7573965d1623351d4d INFO: start
+2018-01-26_11:43:48.57618 2018-01-26T11:43:48.557Z 383 TID-oxpcyzx1s BuildTraceSectionsWorker JID-918fa38992986d8e56869e62 INFO: start
+2018-01-26_11:43:48.94904 2018-01-26T11:43:48.948Z 383 TID-oxpcyzui4 ExpireJobCacheWorker JID-70f77d7573965d1623351d4d INFO: done: 0.413 sec
+2018-01-26_11:43:49.23346 2018-01-26T11:43:49.233Z 383 TID-oxpcyzy2g StageUpdateWorker JID-7203f5889c3714a74445408c INFO: done: 0.731 sec
+2018-01-26_11:43:49.60364 2018-01-26T11:43:49.603Z 383 TID-oxpcyzx1s BuildTraceSectionsWorker JID-918fa38992986d8e56869e62 INFO: done: 1.046 sec
+2018-01-26_11:43:49.73744 2018-01-26T11:43:49.737Z 383 TID-oxpcyzxwc BuildFinishedWorker JID-807e5d62a69259c4533bb982 INFO: done: 1.255 sec
+2018-01-26_11:43:49.87583 2018-01-26T11:43:49.875Z 383 TID-oxpcyzwjg PipelineProcessWorker JID-519e7f1c66c498a505fe0bdd INFO: start
+2018-01-26_11:43:49.88490 2018-01-26T11:43:49.883Z 383 TID-oxpcyzu5w StageUpdateWorker JID-6f2a9fbe2aa431da7596fc81 INFO: start
+2018-01-26_11:43:49.89954 2018-01-26T11:43:49.899Z 383 TID-oxpcyzxe0 ExpireJobCacheWorker JID-8e0ea20f9fd07fa7574fbea8 INFO: start
+2018-01-26_11:43:50.10526 2018-01-26T11:43:50.104Z 383 TID-oxpcyzy8k PipelineProcessWorker JID-668a53de3897eddcabbc6929 INFO: start
+2018-01-26_11:43:50.13155 2018-01-26T11:43:50.130Z 383 TID-oxpcyzuuc StageUpdateWorker JID-8baf2f1318cf1f94070835b3 INFO: start
+2018-01-26_11:43:50.19535 2018-01-26T11:43:50.195Z 383 TID-oxpcyzv6k ExpireJobCacheWorker JID-74ca5361d8f71121e9defe75 INFO: start
+2018-01-26_11:43:50.44253 2018-01-26T11:43:50.441Z 383 TID-oxpcyzxe0 ExpireJobCacheWorker JID-8e0ea20f9fd07fa7574fbea8 INFO: done: 0.542 sec
+2018-01-26_11:43:50.63877 2018-01-26T11:43:50.637Z 383 TID-oxpcyzv6k ExpireJobCacheWorker JID-74ca5361d8f71121e9defe75 INFO: done: 0.442 sec
+2018-01-26_11:43:50.86548 2018-01-26T11:43:50.864Z 383 TID-oxpcyzu5w StageUpdateWorker JID-6f2a9fbe2aa431da7596fc81 INFO: done: 0.981 sec
+2018-01-26_11:43:51.02588 2018-01-26T11:43:51.025Z 383 TID-oxpcyzwvo PipelineProcessWorker JID-494a6e3d9d38068fe114b8e6 INFO: start
+2018-01-26_11:43:51.03983 2018-01-26T11:43:51.039Z 383 TID-oxpcyzuo8 StageUpdateWorker JID-6c596a91d4d2546227102a92 INFO: start
+2018-01-26_11:43:51.08133 2018-01-26T11:43:51.080Z 383 TID-oxpcyzui4 ExpireJobCacheWorker JID-bfa8fc22f29197dd95f5dcb7 INFO: start
+2018-01-26_11:43:51.25894 2018-01-26T11:43:51.255Z 383 TID-oxpcyzuuc StageUpdateWorker JID-8baf2f1318cf1f94070835b3 INFO: done: 1.124 sec
+2018-01-26_11:43:51.73577 2018-01-26T11:43:51.735Z 383 TID-oxpcyzuo8 StageUpdateWorker JID-6c596a91d4d2546227102a92 INFO: done: 0.696 sec
+2018-01-26_11:43:51.94848 2018-01-26T11:43:51.947Z 383 TID-oxpcyzui4 ExpireJobCacheWorker JID-bfa8fc22f29197dd95f5dcb7 INFO: done: 0.873 sec
+2018-01-26_11:43:51.95262 2018-01-26T11:43:51.952Z 383 TID-oxpcyzy2g PipelineNotificationWorker JID-012c51b42cff0244dc9a1c54 INFO: start
+2018-01-26_11:43:51.98746 2018-01-26T11:43:51.986Z 383 TID-oxpcyzx1s PipelineHooksWorker JID-d6a79f32cddadfc29f56fabe INFO: start
+2018-01-26_11:43:51.98963 2018-01-26T11:43:51.989Z 383 TID-oxpcyzvow ExpirePipelineCacheWorker JID-ba722a6ec4f70d8f0d0a5f22 INFO: start
+2018-01-26_11:43:52.30571 2018-01-26T11:43:52.304Z 383 TID-oxpcyzwdc PipelineProcessWorker JID-d65fe8dd924416972b43283c INFO: done: 3.803 sec
+2018-01-26_11:43:52.78505 2018-01-26T11:43:52.784Z 383 TID-oxpcyzwjg PipelineProcessWorker JID-519e7f1c66c498a505fe0bdd INFO: done: 2.909 sec
+2018-01-26_11:43:53.17212 2018-01-26T11:43:53.171Z 383 TID-oxpcyzy8k PipelineProcessWorker JID-668a53de3897eddcabbc6929 INFO: done: 3.067 sec
+2018-01-26_11:43:53.94981 2018-01-26T11:43:53.949Z 383 TID-oxpcyzvow ExpirePipelineCacheWorker JID-ba722a6ec4f70d8f0d0a5f22 INFO: done: 1.96 sec
+2018-01-26_11:43:53.95587 2018-01-26T11:43:53.955Z 383 TID-oxpcyzwvo PipelineProcessWorker JID-494a6e3d9d38068fe114b8e6 INFO: done: 2.93 sec
+2018-01-26_11:43:54.10532 2018-01-26T11:43:54.105Z 383 TID-oxpcyzuuc ActionMailer::DeliveryJob JID-f39850b256c371df0a89a603 INFO: start
+2018-01-26_11:43:54.28872 2018-01-26T11:43:54.288Z 383 TID-oxpcyzy2g PipelineNotificationWorker JID-012c51b42cff0244dc9a1c54 INFO: done: 2.336 sec
+2018-01-26_11:43:55.28371 2018-01-26T11:43:55.283Z 383 TID-oxpcyzx1s PipelineHooksWorker JID-d6a79f32cddadfc29f56fabe INFO: done: 3.296 sec
+2018-01-26_11:43:55.85850 sh: 1: /usr/sbin/sendmail: not found
+2018-01-26_11:43:55.87377 2018-01-26T11:43:55.873Z 383 TID-oxpcyzuuc ActionMailer::DeliveryJob JID-f39850b256c371df0a89a603 INFO: done: 1.768 sec
+2018-01-26_11:48:06.25088 2018-01-26T11:48:06.250Z 383 TID-oxpcyzxq8 PostReceive JID-7f94264f7d3db9c984a3bed1 INFO: start
+2018-01-26_11:48:06.76633 2018-01-26T11:48:06.764Z 383 TID-oxpcyzw14 UpdateMergeRequestsWorker JID-7bd3f2ccee1a7dccaabd855a INFO: start
+2018-01-26_11:48:07.32687 2018-01-26T11:48:07.326Z 383 TID-oxpcyzw14 UpdateMergeRequestsWorker JID-7bd3f2ccee1a7dccaabd855a INFO: done: 0.562 sec
+2018-01-26_11:48:08.23636 2018-01-26T11:48:08.234Z 383 TID-oxpcyzwpk BuildHooksWorker JID-c7e6b7a2ebc5ad0461d48c0f INFO: start
+2018-01-26_11:48:08.88042 2018-01-26T11:48:08.879Z 383 TID-oxpcyzwpk BuildHooksWorker JID-c7e6b7a2ebc5ad0461d48c0f INFO: done: 0.645 sec
+2018-01-26_11:48:09.07065 2018-01-26T11:48:09.070Z 383 TID-oxpcyzu5w BuildQueueWorker JID-26b4ed2c59e0475bcba5ec8d INFO: start
+2018-01-26_11:48:09.07286 2018-01-26T11:48:09.072Z 383 TID-oxpcyzuc0 PipelineUpdateWorker JID-7064b6fe11563c506a9067db INFO: start
+2018-01-26_11:48:09.07564 2018-01-26T11:48:09.075Z 383 TID-oxpcyzvv0 ExpireJobCacheWorker JID-70e518e5bb5b300bca35048a INFO: start
+2018-01-26_11:48:09.07662 2018-01-26T11:48:09.076Z 383 TID-oxpcyzx7w StageUpdateWorker JID-72e42699fc41c7d0cf8c654f INFO: start
+2018-01-26_11:48:09.34429 2018-01-26T11:48:09.344Z 383 TID-oxpcyzu5w BuildQueueWorker JID-26b4ed2c59e0475bcba5ec8d INFO: done: 0.274 sec
+2018-01-26_11:48:09.44383 2018-01-26T11:48:09.443Z 383 TID-oxpcyzvv0 ExpireJobCacheWorker JID-70e518e5bb5b300bca35048a INFO: done: 0.368 sec
+2018-01-26_11:48:09.57858 2018-01-26T11:48:09.578Z 383 TID-oxpcyzw14 PipelineHooksWorker JID-a9191055f67efee4b9faf990 INFO: start
+2018-01-26_11:48:09.58329 2018-01-26T11:48:09.583Z 383 TID-oxpcyzy2g ExpirePipelineCacheWorker JID-abac96178a019d20d90fac99 INFO: start
+2018-01-26_11:48:09.59346 2018-01-26T11:48:09.590Z 383 TID-oxpcyzwjg SystemHookPushWorker JID-7cbab6259c6de5b1915f0259 INFO: start
+2018-01-26_11:48:09.62844 2018-01-26T11:48:09.628Z 383 TID-oxpcyzui4 ProjectCacheWorker JID-27983d69c864cab1e50d2bc7 INFO: start
+2018-01-26_11:48:09.78298 2018-01-26T11:48:09.782Z 383 TID-oxpcyzwjg SystemHookPushWorker JID-7cbab6259c6de5b1915f0259 INFO: done: 0.192 sec
+2018-01-26_11:48:09.90192 2018-01-26T11:48:09.901Z 383 TID-oxpcyzx7w StageUpdateWorker JID-72e42699fc41c7d0cf8c654f INFO: done: 0.825 sec
+2018-01-26_11:48:09.95071 2018-01-26T11:48:09.950Z 383 TID-oxpcyzxq8 PostReceive JID-7f94264f7d3db9c984a3bed1 INFO: done: 3.7 sec
+2018-01-26_11:48:09.96739 2018-01-26T11:48:09.966Z 383 TID-oxpcyzy2g ExpirePipelineCacheWorker JID-abac96178a019d20d90fac99 INFO: done: 0.384 sec
+2018-01-26_11:48:10.00226 2018-01-26T11:48:10.001Z 383 TID-oxpcyzuc0 PipelineUpdateWorker JID-7064b6fe11563c506a9067db INFO: done: 0.929 sec
+2018-01-26_11:48:10.08907 2018-01-26T11:48:10.088Z 383 TID-oxpcyzuo8 BuildHooksWorker JID-ea8399993526ad4170ff5770 INFO: start
+2018-01-26_11:48:10.08959 2018-01-26T11:48:10.088Z 383 TID-oxpcyzxk4 StageUpdateWorker JID-91b30f6d4d7f9d99c63267c4 INFO: start
+2018-01-26_11:48:10.09048 2018-01-26T11:48:10.090Z 383 TID-oxpcyzvco PipelineUpdateWorker JID-99d78ba85549f92b99d8db80 INFO: start
+2018-01-26_11:48:10.14927 2018-01-26T11:48:10.148Z 383 TID-oxpcyzv0g ExpireJobCacheWorker JID-b2866f7b35383fd3da3b89ee INFO: start
+2018-01-26_11:48:10.66529 2018-01-26T11:48:10.664Z 383 TID-oxpcyzw14 PipelineHooksWorker JID-a9191055f67efee4b9faf990 INFO: done: 1.087 sec
+2018-01-26_11:48:10.79742 2018-01-26T11:48:10.796Z 383 TID-oxpcyzv0g ExpireJobCacheWorker JID-b2866f7b35383fd3da3b89ee INFO: done: 0.648 sec
+2018-01-26_11:48:10.83510 2018-01-26T11:48:10.834Z 383 TID-oxpcyzxe0 PipelineMetricsWorker JID-779b9504eecdc97d1f2239ae INFO: start
+2018-01-26_11:48:10.83558 2018-01-26T11:48:10.835Z 383 TID-oxpcyzwpk ExpirePipelineCacheWorker JID-9914c911311a2d6251c2d4bb INFO: start
+2018-01-26_11:48:10.83636 2018-01-26T11:48:10.836Z 383 TID-oxpcyzwdc PipelineHooksWorker JID-6886e01f46d4935954d319c4 INFO: start
+2018-01-26_11:48:10.85221 2018-01-26T11:48:10.851Z 383 TID-oxpcyzxk4 StageUpdateWorker JID-91b30f6d4d7f9d99c63267c4 INFO: done: 0.763 sec
+2018-01-26_11:48:10.86175 2018-01-26T11:48:10.861Z 383 TID-oxpcyzui4 ProjectCacheWorker JID-27983d69c864cab1e50d2bc7 INFO: done: 1.233 sec
+2018-01-26_11:48:10.86586 2018-01-26T11:48:10.865Z 383 TID-oxpcyzvco PipelineUpdateWorker JID-99d78ba85549f92b99d8db80 INFO: done: 0.775 sec
+2018-01-26_11:48:10.95604 2018-01-26T11:48:10.955Z 383 TID-oxpcyzxe0 PipelineMetricsWorker JID-779b9504eecdc97d1f2239ae INFO: done: 0.121 sec
+2018-01-26_11:48:11.06028 2018-01-26T11:48:11.060Z 383 TID-oxpcyzuo8 BuildHooksWorker JID-ea8399993526ad4170ff5770 INFO: done: 0.972 sec
+2018-01-26_11:48:11.08223 2018-01-26T11:48:11.082Z 383 TID-oxpcyzwpk ExpirePipelineCacheWorker JID-9914c911311a2d6251c2d4bb INFO: done: 0.247 sec
+2018-01-26_11:48:11.11748 2018-01-26T11:48:11.117Z 383 TID-oxpcyzwdc PipelineHooksWorker JID-6886e01f46d4935954d319c4 INFO: done: 0.281 sec
+2018-01-26_11:48:20.58586 2018-01-26T11:48:20.585Z 383 TID-oxpcyzwjg BuildFinishedWorker JID-9f1f2a44bdd9dde1ac9f8378 INFO: start
+2018-01-26_11:48:20.60202 2018-01-26T11:48:20.601Z 383 TID-oxpcyzx7w BuildTraceSectionsWorker JID-2d6d372cd6d632d6e9ac3ca4 INFO: start
+2018-01-26_11:48:20.60877 2018-01-26T11:48:20.608Z 383 TID-oxpcyzy8k PipelineProcessWorker JID-f26d4af956923d57af57d0fd INFO: start
+2018-01-26_11:48:20.62511 2018-01-26T11:48:20.624Z 383 TID-oxpcyzwvo StageUpdateWorker JID-a5cbae98a4f3247a7b8ffcec INFO: start
+2018-01-26_11:48:20.64432 2018-01-26T11:48:20.643Z 383 TID-oxpcyzx1s ExpireJobCacheWorker JID-42ebaca9ba980c7fbef6a107 INFO: start
+2018-01-26_11:48:20.92976 2018-01-26T11:48:20.929Z 383 TID-oxpcyzx1s ExpireJobCacheWorker JID-42ebaca9ba980c7fbef6a107 INFO: done: 0.286 sec
+2018-01-26_11:48:21.13245 2018-01-26T11:48:21.131Z 383 TID-oxpcyzx7w BuildTraceSectionsWorker JID-2d6d372cd6d632d6e9ac3ca4 INFO: done: 0.53 sec
+2018-01-26_11:48:21.16956 2018-01-26T11:48:21.169Z 383 TID-oxpcyzxq8 PipelineNotificationWorker JID-59e5189b072a6a6d6fe5e0f2 INFO: start
+2018-01-26_11:48:21.17008 2018-01-26T11:48:21.169Z 383 TID-oxpcyzuc0 PipelineHooksWorker JID-89738f0b731406f504fcf8da INFO: start
+2018-01-26_11:48:21.19609 2018-01-26T11:48:21.195Z 383 TID-oxpcyzwvo StageUpdateWorker JID-a5cbae98a4f3247a7b8ffcec INFO: done: 0.572 sec
+2018-01-26_11:48:21.21517 2018-01-26T11:48:21.213Z 383 TID-oxpcyzv6k ExpirePipelineCacheWorker JID-aa296de7c840adb71bef3874 INFO: start
+2018-01-26_11:48:21.26409 2018-01-26T11:48:21.263Z 383 TID-oxpcyzy8k PipelineProcessWorker JID-f26d4af956923d57af57d0fd INFO: done: 0.655 sec
+2018-01-26_11:48:21.35546 2018-01-26T11:48:21.355Z 383 TID-oxpcyzwjg BuildFinishedWorker JID-9f1f2a44bdd9dde1ac9f8378 INFO: done: 0.77 sec
+2018-01-26_11:48:21.40615 2018-01-26T11:48:21.405Z 383 TID-oxpcyzxwc ActionMailer::DeliveryJob JID-447d6b062109758ee9772769 INFO: start
+2018-01-26_11:48:21.50181 2018-01-26T11:48:21.500Z 383 TID-oxpcyzxq8 PipelineNotificationWorker JID-59e5189b072a6a6d6fe5e0f2 INFO: done: 0.331 sec
+2018-01-26_11:48:21.53339 2018-01-26T11:48:21.532Z 383 TID-oxpcyzv6k ExpirePipelineCacheWorker JID-aa296de7c840adb71bef3874 INFO: done: 0.319 sec
+2018-01-26_11:48:21.67718 2018-01-26T11:48:21.675Z 383 TID-oxpcyzuc0 PipelineHooksWorker JID-89738f0b731406f504fcf8da INFO: done: 0.506 sec
+2018-01-26_11:48:21.79738 sh: 1: /usr/sbin/sendmail: not found
+2018-01-26_11:48:21.80454 2018-01-26T11:48:21.804Z 383 TID-oxpcyzxwc ActionMailer::DeliveryJob JID-447d6b062109758ee9772769 INFO: done: 0.398 sec
+2018-01-26_11:50:10.86892 2018-01-26T11:50:10.868Z 383 TID-oxpcyzuuc ExpireBuildArtifactsWorker JID-09726129ee8623838bde2857 INFO: start
+2018-01-26_11:50:10.90702 2018-01-26T11:50:10.906Z 383 TID-oxpcyzuuc ExpireBuildArtifactsWorker JID-09726129ee8623838bde2857 INFO: done: 0.038 sec
+2018-01-26_11:50:43.07923 2018-01-26T11:50:43.077Z 383 TID-oxpcyzuuc BuildHooksWorker JID-34c1faa908c4c0cb6f14c2be INFO: start
+2018-01-26_11:50:43.19161 2018-01-26T11:50:43.191Z 383 TID-oxpcyzvow BuildQueueWorker JID-b718dce9843b4f28e182a273 INFO: start
+2018-01-26_11:50:43.22122 2018-01-26T11:50:43.218Z 383 TID-oxpcyzu5w StageUpdateWorker JID-ccaf36b9a44fd1cf5b992f80 INFO: start
+2018-01-26_11:50:43.22217 2018-01-26T11:50:43.220Z 383 TID-oxpcyzv6k ExpireJobCacheWorker JID-9b391795b1e0594b85dfa6e9 INFO: start
+2018-01-26_11:50:43.31010 2018-01-26T11:50:43.309Z 383 TID-oxpcyzx1s PipelineUpdateWorker JID-d13376bdbe534a94495a8e9b INFO: start
+2018-01-26_11:50:43.55606 2018-01-26T11:50:43.555Z 383 TID-oxpcyzv6k ExpireJobCacheWorker JID-9b391795b1e0594b85dfa6e9 INFO: done: 0.335 sec
+2018-01-26_11:50:43.63345 2018-01-26T11:50:43.633Z 383 TID-oxpcyzvow BuildQueueWorker JID-b718dce9843b4f28e182a273 INFO: done: 0.442 sec
+2018-01-26_11:50:43.75100 2018-01-26T11:50:43.750Z 383 TID-oxpcyzuuc BuildHooksWorker JID-34c1faa908c4c0cb6f14c2be INFO: done: 0.673 sec
+2018-01-26_11:50:43.85652 2018-01-26T11:50:43.853Z 383 TID-oxpcyzu5w StageUpdateWorker JID-ccaf36b9a44fd1cf5b992f80 INFO: done: 0.635 sec
+2018-01-26_11:50:43.91724 2018-01-26T11:50:43.917Z 383 TID-oxpcyzvis PipelineHooksWorker JID-6624f642f9182634ca2f4c0a INFO: start
+2018-01-26_11:50:43.92533 2018-01-26T11:50:43.924Z 383 TID-oxpcyzy8k ExpirePipelineCacheWorker JID-5dea98fa1097607624500980 INFO: start
+2018-01-26_11:50:43.98523 2018-01-26T11:50:43.984Z 383 TID-oxpcyzx1s PipelineUpdateWorker JID-d13376bdbe534a94495a8e9b INFO: done: 0.675 sec
+2018-01-26_11:50:44.34814 2018-01-26T11:50:44.346Z 383 TID-oxpcyzy8k ExpirePipelineCacheWorker JID-5dea98fa1097607624500980 INFO: done: 0.422 sec
+2018-01-26_11:50:44.47353 2018-01-26T11:50:44.473Z 383 TID-oxpcyzvis PipelineHooksWorker JID-6624f642f9182634ca2f4c0a INFO: done: 0.556 sec
+2018-01-26_11:50:45.51529 2018-01-26T11:50:45.511Z 383 TID-oxpcyzv6k BuildHooksWorker JID-c6e1e42a7be4e1828f64c18d INFO: start
+2018-01-26_11:50:45.52793 2018-01-26T11:50:45.527Z 383 TID-oxpcyzvow PipelineUpdateWorker JID-45e35d7b501cb3f53d64cdd0 INFO: start
+2018-01-26_11:50:45.54228 2018-01-26T11:50:45.541Z 383 TID-oxpcyzuuc StageUpdateWorker JID-c85693ef1a0dc95dd8287b42 INFO: start
+2018-01-26_11:50:45.55643 2018-01-26T11:50:45.549Z 383 TID-oxpcyzu5w ExpireJobCacheWorker JID-49f8cb9e10fc7dba0297965b INFO: start
+2018-01-26_11:50:46.08595 2018-01-26T11:50:46.085Z 383 TID-oxpcyzu5w ExpireJobCacheWorker JID-49f8cb9e10fc7dba0297965b INFO: done: 0.537 sec
+2018-01-26_11:50:46.27974 2018-01-26T11:50:46.277Z 383 TID-oxpcyzvow PipelineUpdateWorker JID-45e35d7b501cb3f53d64cdd0 INFO: done: 0.75 sec
+2018-01-26_11:50:46.28723 2018-01-26T11:50:46.286Z 383 TID-oxpcyzv6k BuildHooksWorker JID-c6e1e42a7be4e1828f64c18d INFO: done: 0.775 sec
+2018-01-26_11:50:46.28988 2018-01-26T11:50:46.289Z 383 TID-oxpcyzuuc StageUpdateWorker JID-c85693ef1a0dc95dd8287b42 INFO: done: 0.749 sec
+2018-01-26_11:50:51.52881 2018-01-26T11:50:51.528Z 383 TID-oxpcyzv0g BuildFinishedWorker JID-2c92730e8d392b8656cee3d4 INFO: start
+2018-01-26_11:50:51.54624 2018-01-26T11:50:51.545Z 383 TID-oxpcyzxe0 BuildTraceSectionsWorker JID-23e74ae79eb79b3f9e56ce2c INFO: start
+2018-01-26_11:50:51.54680 2018-01-26T11:50:51.546Z 383 TID-oxpcyzvv0 PipelineProcessWorker JID-d2f328c5e7759d0bb1b14355 INFO: start
+2018-01-26_11:50:51.55348 2018-01-26T11:50:51.553Z 383 TID-oxpcyzxq8 StageUpdateWorker JID-0acc20211a7e52dfc5f2e506 INFO: start
+2018-01-26_11:50:51.55567 2018-01-26T11:50:51.555Z 383 TID-oxpcyzw14 ExpireJobCacheWorker JID-4d211763ee3f1b18885af880 INFO: start
+2018-01-26_11:50:51.86394 2018-01-26T11:50:51.863Z 383 TID-oxpcyzw14 ExpireJobCacheWorker JID-4d211763ee3f1b18885af880 INFO: done: 0.308 sec
+2018-01-26_11:50:52.10760 2018-01-26T11:50:52.107Z 383 TID-oxpcyzxe0 BuildTraceSectionsWorker JID-23e74ae79eb79b3f9e56ce2c INFO: done: 0.562 sec
+2018-01-26_11:50:52.37436 2018-01-26T11:50:52.372Z 383 TID-oxpcyzv0g BuildFinishedWorker JID-2c92730e8d392b8656cee3d4 INFO: done: 0.845 sec
+2018-01-26_11:50:52.41330 2018-01-26T11:50:52.412Z 383 TID-oxpcyzxq8 StageUpdateWorker JID-0acc20211a7e52dfc5f2e506 INFO: done: 0.859 sec
+2018-01-26_11:50:52.43955 2018-01-26T11:50:52.439Z 383 TID-oxpcyzy8k PipelineNotificationWorker JID-389a67906974c011423ad0ea INFO: start
+2018-01-26_11:50:52.44393 2018-01-26T11:50:52.443Z 383 TID-oxpcyzx1s PipelineHooksWorker JID-6ab29743cc2770d69448f8c6 INFO: start
+2018-01-26_11:50:52.46092 2018-01-26T11:50:52.460Z 383 TID-oxpcyzwjg ExpirePipelineCacheWorker JID-5c4702485fa50537c19f1de6 INFO: start
+2018-01-26_11:50:52.51334 2018-01-26T11:50:52.512Z 383 TID-oxpcyzvv0 PipelineProcessWorker JID-d2f328c5e7759d0bb1b14355 INFO: done: 0.967 sec
+2018-01-26_11:50:52.78937 2018-01-26T11:50:52.788Z 383 TID-oxpcyzw78 ActionMailer::DeliveryJob JID-0a1db219360df24dc6339540 INFO: start
+2018-01-26_11:50:52.85797 2018-01-26T11:50:52.857Z 383 TID-oxpcyzwjg ExpirePipelineCacheWorker JID-5c4702485fa50537c19f1de6 INFO: done: 0.396 sec
+2018-01-26_11:50:52.87835 2018-01-26T11:50:52.877Z 383 TID-oxpcyzy8k PipelineNotificationWorker JID-389a67906974c011423ad0ea INFO: done: 0.439 sec
+2018-01-26_11:50:53.10411 2018-01-26T11:50:53.103Z 383 TID-oxpcyzx1s PipelineHooksWorker JID-6ab29743cc2770d69448f8c6 INFO: done: 0.66 sec
+2018-01-26_11:50:53.29615 sh: 1: /usr/sbin/sendmail: not found
+2018-01-26_11:50:53.31416 2018-01-26T11:50:53.314Z 383 TID-oxpcyzw78 ActionMailer::DeliveryJob JID-0a1db219360df24dc6339540 INFO: done: 0.526 sec
+2018-01-26_11:56:36.31828 2018-01-26T11:56:36.318Z 383 TID-oxpir2z1k INFO: Shutting down
+2018-01-26_11:56:36.31936 2018-01-26T11:56:36.318Z 383 TID-oxpcyzu0w INFO: Scheduler exiting...
+2018-01-26_11:56:36.31963 2018-01-26T11:56:36.319Z 383 TID-oxpir2z1k INFO: Terminating quiet workers
+2018-01-26_11:56:36.31994 2018-01-26T11:56:36.319Z 383 TID-oxpcyzygc INFO: Scheduler exiting...
+2018-01-26_11:56:36.82354 2018-01-26T11:56:36.823Z 383 TID-oxpir2z1k INFO: Pausing to allow workers to finish...

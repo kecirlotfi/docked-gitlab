@@ -1,0 +1,71 @@
+I, [2018-01-26T09:35:54.573981 #637]  INFO -- : Refreshing Gem list
+I, [2018-01-26T09:36:48.323186 #637]  INFO -- : listening on addr=127.0.0.1:8080 fd=18
+I, [2018-01-26T09:36:48.342860 #637]  INFO -- : listening on addr=/var/opt/gitlab/gitlab-rails/sockets/gitlab.socket fd=19
+I, [2018-01-26T09:36:48.424283 #637]  INFO -- : master process ready
+I, [2018-01-26T09:36:48.632786 #952]  INFO -- : worker=0 ready
+I, [2018-01-26T09:36:48.745880 #955]  INFO -- : worker=1 ready
+I, [2018-01-26T11:04:23.053374 #459]  INFO -- : Refreshing Gem list
+I, [2018-01-26T11:05:33.253862 #459]  INFO -- : listening on addr=127.0.0.1:8080 fd=18
+I, [2018-01-26T11:05:33.256596 #459]  INFO -- : unlinking existing socket=/var/opt/gitlab/gitlab-rails/sockets/gitlab.socket
+I, [2018-01-26T11:05:33.258743 #459]  INFO -- : listening on addr=/var/opt/gitlab/gitlab-rails/sockets/gitlab.socket fd=19
+I, [2018-01-26T11:05:33.296051 #459]  INFO -- : master process ready
+I, [2018-01-26T11:05:33.420592 #643]  INFO -- : worker=0 ready
+I, [2018-01-26T11:05:33.477030 #646]  INFO -- : worker=1 ready
+I, [2018-01-26T11:12:52.153545 #459]  INFO -- : reaped #<Process::Status: pid 643 exit 0> worker=0
+I, [2018-01-26T11:12:52.155440 #459]  INFO -- : reaped #<Process::Status: pid 646 exit 0> worker=1
+I, [2018-01-26T11:12:52.157094 #459]  INFO -- : master complete
+I, [2018-01-26T11:13:16.696174 #459]  INFO -- : Refreshing Gem list
+I, [2018-01-26T11:14:11.588090 #459]  INFO -- : listening on addr=127.0.0.1:8080 fd=18
+I, [2018-01-26T11:14:11.590735 #459]  INFO -- : unlinking existing socket=/var/opt/gitlab/gitlab-rails/sockets/gitlab.socket
+I, [2018-01-26T11:14:11.592620 #459]  INFO -- : listening on addr=/var/opt/gitlab/gitlab-rails/sockets/gitlab.socket fd=19
+I, [2018-01-26T11:14:11.630035 #459]  INFO -- : master process ready
+I, [2018-01-26T11:14:11.734758 #641]  INFO -- : worker=0 ready
+I, [2018-01-26T11:14:11.768422 #644]  INFO -- : worker=1 ready
+I, [2018-01-26T11:21:28.517454 #451]  INFO -- : Refreshing Gem list
+I, [2018-01-26T11:22:21.618505 #451]  INFO -- : listening on addr=127.0.0.1:8080 fd=18
+I, [2018-01-26T11:22:21.621073 #451]  INFO -- : unlinking existing socket=/var/opt/gitlab/gitlab-rails/sockets/gitlab.socket
+I, [2018-01-26T11:22:21.623349 #451]  INFO -- : listening on addr=/var/opt/gitlab/gitlab-rails/sockets/gitlab.socket fd=19
+I, [2018-01-26T11:22:21.660143 #451]  INFO -- : master process ready
+I, [2018-01-26T11:22:22.199803 #631]  INFO -- : worker=0 ready
+I, [2018-01-26T11:22:22.261574 #634]  INFO -- : worker=1 ready
+I, [2018-01-26T11:22:34.838848 #451]  INFO -- : reaped #<Process::Status: pid 631 exit 0> worker=0
+I, [2018-01-26T11:22:34.839342 #451]  INFO -- : reaped #<Process::Status: pid 634 exit 0> worker=1
+I, [2018-01-26T11:22:34.839787 #451]  INFO -- : master complete
+I, [2018-01-26T11:23:21.450075 #452]  INFO -- : Refreshing Gem list
+I, [2018-01-26T11:24:12.216315 #452]  INFO -- : listening on addr=127.0.0.1:8080 fd=18
+I, [2018-01-26T11:24:12.220126 #452]  INFO -- : unlinking existing socket=/var/opt/gitlab/gitlab-rails/sockets/gitlab.socket
+I, [2018-01-26T11:24:12.222664 #452]  INFO -- : listening on addr=/var/opt/gitlab/gitlab-rails/sockets/gitlab.socket fd=19
+I, [2018-01-26T11:24:12.257398 #452]  INFO -- : master process ready
+I, [2018-01-26T11:24:12.334235 #626]  INFO -- : worker=0 ready
+I, [2018-01-26T11:24:12.379487 #629]  INFO -- : worker=1 ready
+I, [2018-01-26T11:27:27.221464 #452]  INFO -- : reaped #<Process::Status: pid 626 exit 0> worker=0
+I, [2018-01-26T11:27:27.222097 #452]  INFO -- : reaped #<Process::Status: pid 629 exit 0> worker=1
+I, [2018-01-26T11:27:27.222723 #452]  INFO -- : master complete
+I, [2018-01-26T11:30:43.353199 #378]  INFO -- : Refreshing Gem list
+I, [2018-01-26T11:31:42.210986 #378]  INFO -- : listening on addr=127.0.0.1:8080 fd=18
+I, [2018-01-26T11:31:42.213434 #378]  INFO -- : unlinking existing socket=/var/opt/gitlab/gitlab-rails/sockets/gitlab.socket
+I, [2018-01-26T11:31:42.214911 #378]  INFO -- : listening on addr=/var/opt/gitlab/gitlab-rails/sockets/gitlab.socket fd=19
+I, [2018-01-26T11:31:42.260035 #378]  INFO -- : master process ready
+I, [2018-01-26T11:31:42.721466 #740]  INFO -- : worker=1 ready
+I, [2018-01-26T11:31:42.726292 #737]  INFO -- : worker=0 ready
+I, [2018-01-26T12:10:20.625774 #378]  INFO -- : Refreshing Gem list
+I, [2018-01-26T12:11:21.310322 #378]  INFO -- : listening on addr=127.0.0.1:8080 fd=18
+I, [2018-01-26T12:11:21.312808 #378]  INFO -- : unlinking existing socket=/var/opt/gitlab/gitlab-rails/sockets/gitlab.socket
+I, [2018-01-26T12:11:21.314636 #378]  INFO -- : listening on addr=/var/opt/gitlab/gitlab-rails/sockets/gitlab.socket fd=19
+I, [2018-01-26T12:11:21.349210 #378]  INFO -- : master process ready
+I, [2018-01-26T12:11:21.763242 #748]  INFO -- : worker=1 ready
+I, [2018-01-26T12:11:21.866508 #745]  INFO -- : worker=0 ready
+I, [2018-01-26T13:04:06.251418 #378]  INFO -- : reaped #<Process::Status: pid 745 exit 0> worker=0
+I, [2018-01-26T13:04:06.263096 #378]  INFO -- : reaped #<Process::Status: pid 748 exit 0> worker=1
+I, [2018-01-26T13:04:06.273703 #378]  INFO -- : master complete
+I, [2018-01-26T13:05:15.854141 #376]  INFO -- : Refreshing Gem list
+I, [2018-01-26T13:06:13.100565 #376]  INFO -- : listening on addr=127.0.0.1:8080 fd=18
+I, [2018-01-26T13:06:13.103698 #376]  INFO -- : unlinking existing socket=/var/opt/gitlab/gitlab-rails/sockets/gitlab.socket
+I, [2018-01-26T13:06:13.105531 #376]  INFO -- : listening on addr=/var/opt/gitlab/gitlab-rails/sockets/gitlab.socket fd=19
+I, [2018-01-26T13:06:13.138289 #376]  INFO -- : master process ready
+I, [2018-01-26T13:06:13.233506 #664]  INFO -- : worker=1 ready
+I, [2018-01-26T13:06:13.249171 #661]  INFO -- : worker=0 ready
+W, [2018-01-26T13:08:19.670847 #661]  WARN -- : #<Unicorn::HttpServer:0x00007f09981e1128>: worker (pid: 661) exceeds memory limit (459533824.0 bytes > 457921296 bytes)
+W, [2018-01-26T13:08:19.673744 #661]  WARN -- : Unicorn::WorkerKiller send SIGQUIT (pid: 661) alive: 114 sec (trial 1)
+I, [2018-01-26T13:08:22.269219 #376]  INFO -- : reaped #<Process::Status: pid 661 exit 0> worker=0
+I, [2018-01-26T13:08:23.229166 #957]  INFO -- : worker=0 ready

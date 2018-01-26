@@ -1,0 +1,15 @@
+[0KRunning with gitlab-runner 10.4.0 (857480b6)
+  on bal bla bla bla (62f92584)
+[0;m[0KUsing Docker executor with image busybox:latest ...
+[0;m[0KUsing docker image sha256:e5b4ab9cd03ce633707bddaae647e84d342fda3499a2ca99cefddb7f47a1e68d for predefined container...
+[0;m[0KPulling docker image busybox:latest ...
+[0;m[0KUsing docker image busybox:latest ID=sha256:5b0d59026729b68570d99bc4f3f7c31a2e4f2a5736435641565d93e7c25bd2c3 for build container...
+[0;msection_start:1516972494:prepare_script[0KRunning on runner-62f92584-project-1-concurrent-0 via b7f2217dfa38...
+section_end:1516972496:prepare_script[0Ksection_start:1516972496:get_sources[0K[32;1mCloning repository...[0;m
+Cloning into '/builds/root/test'...
+[32;1mChecking out fd688897 as master...[0;m
+[32;1mSkipping Git submodules setup[0;m
+section_end:1516972500:get_sources[0Ksection_start:1516972500:restore_cache[0Ksection_end:1516972502:restore_cache[0Ksection_start:1516972502:download_artifacts[0Ksection_end:1516972503:download_artifacts[0Ksection_start:1516972503:build_script[0K[32;1m$ echo "Hello TOTO"[0;m
+Hello TOTO
+section_end:1516972505:build_script[0Ksection_start:1516972505:after_script[0Ksection_end:1516972506:after_script[0Ksection_start:1516972506:archive_cache[0Ksection_end:1516972508:archive_cache[0Ksection_start:1516972508:upload_artifacts[0Ksection_end:1516972509:upload_artifacts[0K[32;1mJob succeeded
+[0;m

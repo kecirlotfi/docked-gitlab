@@ -1,0 +1,16 @@
+concurrent = 1
+
+[[runners]]
+  name = "Ruby builder"
+  url = "http://172.17.0.6:30080/ci"
+  token = "e1cce0f9f5f212e51bd3c057d4e8e9"
+  executor = "docker"
+  clone_url = "172.17.0.6"
+  [runners.docker]
+    tls_verify = false
+    image = "busbox:latest"
+    privileged = false
+    disable_cache = true
+    volumes = ["/cache"]
+  [runners.cache]
+    Insecure = true

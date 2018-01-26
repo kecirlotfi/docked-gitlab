@@ -1,0 +1,19 @@
+[0KRunning with gitlab-runner 10.4.0 (857480b6)
+  on bal bla bla bla (62f92584)
+[0;m[0KUsing Docker executor with image docker:latest ...
+[0;m[0KUsing docker image sha256:e5b4ab9cd03ce633707bddaae647e84d342fda3499a2ca99cefddb7f47a1e68d for predefined container...
+[0;m[0KPulling docker image docker:latest ...
+[0;m[0KUsing docker image docker:latest ID=sha256:73a5b9800caa376abdb533a45a66f418d37443a3c7a9d475838eb5fe0ba0bd06 for build container...
+[0;msection_start:1516981362:prepare_script[0KRunning on runner-62f92584-project-1-concurrent-0 via b7f2217dfa38...
+section_end:1516981364:prepare_script[0Ksection_start:1516981364:get_sources[0K[32;1mFetching changes...[0;m
+HEAD is now at fd68889 Update .gitlab-ci.yml
+From http://172.17.0.6/root/test
+   fd68889..1037d41  master     -> origin/master
+[32;1mChecking out 1037d415 as master...[0;m
+[32;1mSkipping Git submodules setup[0;m
+section_end:1516981369:get_sources[0Ksection_start:1516981369:restore_cache[0Ksection_end:1516981371:restore_cache[0Ksection_start:1516981371:download_artifacts[0Ksection_end:1516981373:download_artifacts[0Ksection_start:1516981373:build_script[0K[32;1m$ docker login -u xquantum -p "Adomik123$" "https://index.docker.io/v1/"[0;m
+WARNING! Using --password via the CLI is insecure. Use --password-stdin.
+Warning: failed to get default registry endpoint from daemon (Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?). Using system default: https://index.docker.io/v1/
+Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
+section_end:1516981375:build_script[0Ksection_start:1516981375:after_script[0Ksection_end:1516981378:after_script[0K[31;1mERROR: Job failed: exit code 1
+[0;m

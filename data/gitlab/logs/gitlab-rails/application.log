@@ -1,0 +1,6 @@
+# Logfile created on 2018-01-26 09:35:48 +0000 by logger.rb/56438
+January 26, 2018 09:35: User "Administrator" (admin@example.com) was created
+January 26, 2018 09:40: Successful Login: username=root ip=172.17.0.1 method=standard admin=true
+January 26, 2018 09:41: Administrator created a new project "Administrator / test"
+January 26, 2018 11:38: Successful Login: username=root ip=172.17.0.1 method=standard admin=true
+January 26, 2018 13:06: Successful Login: username=root ip=172.17.0.1 method=standard admin=true

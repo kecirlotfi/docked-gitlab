@@ -1,0 +1,43 @@
+2018-01-26_11:21:26.14626 2018/01/26 11:21:26 Starting gitlab-workhorse v3.3.1-20180119.140752
+2018-01-26_11:21:26.15966 2018/01/26 11:21:26 keywatcher: starting process loop
+2018-01-26_11:21:26.16253 2018/01/26 11:21:26 redis: dialing "tcp", "redis:6379"
+2018-01-26_11:21:28.46586 2018/01/26 11:21:28 error: POST "/api/v4/jobs/request": badgateway: failed after 0s: dial unix /var/opt/gitlab/gitlab-rails/sockets/gitlab.socket: connect: connection refused
+2018-01-26_11:21:28.46627 172.17.0.6:30080 @ - - [2018-01-26 11:21:28.458319921 +0000 UTC m=+2.604688741] "POST /api/v4/jobs/request HTTP/1.1" 502 24 "" "gitlab-runner 10.4.0 (10-4-stable; go1.8.5; linux/amd64)" 0.007649
+2018-01-26_11:21:29.06078 2018/01/26 11:21:29 error: POST "/api/v4/jobs/request": badgateway: failed after 0s: dial unix /var/opt/gitlab/gitlab-rails/sockets/gitlab.socket: connect: connection refused
+2018-01-26_11:21:29.06118 172.17.0.6:30080 @ - - [2018-01-26 11:21:29.058512122 +0000 UTC m=+3.204880935] "POST /api/v4/jobs/request HTTP/1.1" 502 24 "" "gitlab-runner 10.4.0 (10-4-stable; go1.8.5; linux/amd64)" 0.002154
+2018-01-26_11:21:31.47029 2018/01/26 11:21:31 error: POST "/api/v4/jobs/request": badgateway: failed after 0s: dial unix /var/opt/gitlab/gitlab-rails/sockets/gitlab.socket: connect: connection refused
+2018-01-26_11:21:31.47079 172.17.0.6:30080 @ - - [2018-01-26 11:21:31.462436889 +0000 UTC m=+5.608805726] "POST /api/v4/jobs/request HTTP/1.1" 502 24 "" "gitlab-runner 10.4.0 (10-4-stable; go1.8.5; linux/amd64)" 0.007757
+2018-01-26_11:21:32.06965 2018/01/26 11:21:32 error: POST "/api/v4/jobs/request": badgateway: failed after 0s: dial unix /var/opt/gitlab/gitlab-rails/sockets/gitlab.socket: connect: connection refused
+2018-01-26_11:21:32.07022 172.17.0.6:30080 @ - - [2018-01-26 11:21:32.067553512 +0000 UTC m=+6.213922364] "POST /api/v4/jobs/request HTTP/1.1" 502 24 "" "gitlab-runner 10.4.0 (10-4-stable; go1.8.5; linux/amd64)" 0.001995
+2018-01-26_11:21:34.46834 2018/01/26 11:21:34 error: POST "/api/v4/jobs/request": badgateway: failed after 0s: dial unix /var/opt/gitlab/gitlab-rails/sockets/gitlab.socket: connect: connection refused
+2018-01-26_11:21:34.46900 172.17.0.6:30080 @ - - [2018-01-26 11:21:34.4661775 +0000 UTC m=+8.612546352] "POST /api/v4/jobs/request HTTP/1.1" 502 24 "" "gitlab-runner 10.4.0 (10-4-stable; go1.8.5; linux/amd64)" 0.002059
+2018-01-26_11:21:35.06771 2018/01/26 11:21:35 error: POST "/api/v4/jobs/request": badgateway: failed after 0s: dial unix /var/opt/gitlab/gitlab-rails/sockets/gitlab.socket: connect: connection refused
+2018-01-26_11:21:35.06826 172.17.0.6:30080 @ - - [2018-01-26 11:21:35.066035614 +0000 UTC m=+9.212404435] "POST /api/v4/jobs/request HTTP/1.1" 502 24 "" "gitlab-runner 10.4.0 (10-4-stable; go1.8.5; linux/amd64)" 0.001567
+2018-01-26_11:21:37.48218 2018/01/26 11:21:37 error: POST "/api/v4/jobs/request": badgateway: failed after 0s: dial unix /var/opt/gitlab/gitlab-rails/sockets/gitlab.socket: connect: connection refused
+2018-01-26_11:21:37.48262 172.17.0.6:30080 @ - - [2018-01-26 11:21:37.480479465 +0000 UTC m=+11.626848286] "POST /api/v4/jobs/request HTTP/1.1" 502 24 "" "gitlab-runner 10.4.0 (10-4-stable; go1.8.5; linux/amd64)" 0.001599
+2018-01-26_11:21:38.08272 2018/01/26 11:21:38 error: POST "/api/v4/jobs/request": badgateway: failed after 0s: dial unix /var/opt/gitlab/gitlab-rails/sockets/gitlab.socket: connect: connection refused
+2018-01-26_11:21:38.08311 172.17.0.6:30080 @ - - [2018-01-26 11:21:38.081125002 +0000 UTC m=+12.227493838] "POST /api/v4/jobs/request HTTP/1.1" 502 24 "" "gitlab-runner 10.4.0 (10-4-stable; go1.8.5; linux/amd64)" 0.001475
+2018-01-26_11:21:40.48754 2018/01/26 11:21:40 error: POST "/api/v4/jobs/request": badgateway: failed after 0s: dial unix /var/opt/gitlab/gitlab-rails/sockets/gitlab.socket: connect: connection refused
+2018-01-26_11:21:40.48852 172.17.0.6:30080 @ - - [2018-01-26 11:21:40.484381878 +0000 UTC m=+14.630750712] "POST /api/v4/jobs/request HTTP/1.1" 502 24 "" "gitlab-runner 10.4.0 (10-4-stable; go1.8.5; linux/amd64)" 0.003014
+2018-01-26_11:21:42.19169 2018/01/26 11:21:42 error: POST "/api/v4/jobs/request": badgateway: failed after 0s: dial unix /var/opt/gitlab/gitlab-rails/sockets/gitlab.socket: connect: connection refused
+2018-01-26_11:21:42.19228 172.17.0.6:30080 @ - - [2018-01-26 11:21:42.189221021 +0000 UTC m=+16.335589864] "POST /api/v4/jobs/request HTTP/1.1" 502 24 "" "gitlab-runner 10.4.0 (10-4-stable; go1.8.5; linux/amd64)" 0.002302
+2018-01-26_11:21:46.62707 2018/01/26 11:21:46 error: POST "/api/v4/jobs/request": badgateway: failed after 0s: dial unix /var/opt/gitlab/gitlab-rails/sockets/gitlab.socket: connect: connection refused
+2018-01-26_11:21:46.62748 172.17.0.6:30080 @ - - [2018-01-26 11:21:46.625257979 +0000 UTC m=+20.771626801] "POST /api/v4/jobs/request HTTP/1.1" 502 24 "" "gitlab-runner 10.4.0 (10-4-stable; go1.8.5; linux/amd64)" 0.001721
+2018-01-26_11:21:48.08976 2018/01/26 11:21:48 error: POST "/api/v4/jobs/request": badgateway: failed after 0s: dial unix /var/opt/gitlab/gitlab-rails/sockets/gitlab.socket: connect: connection refused
+2018-01-26_11:21:48.09053 172.17.0.6:30080 @ - - [2018-01-26 11:21:48.08603226 +0000 UTC m=+22.232401110] "POST /api/v4/jobs/request HTTP/1.1" 502 24 "" "gitlab-runner 10.4.0 (10-4-stable; go1.8.5; linux/amd64)" 0.004296
+2018-01-26_11:21:52.39815 2018/01/26 11:21:52 error: POST "/api/v4/jobs/request": badgateway: failed after 0s: dial unix /var/opt/gitlab/gitlab-rails/sockets/gitlab.socket: connect: connection refused
+2018-01-26_11:21:52.39866 172.17.0.6:30080 @ - - [2018-01-26 11:21:52.395785194 +0000 UTC m=+26.542154026] "POST /api/v4/jobs/request HTTP/1.1" 502 24 "" "gitlab-runner 10.4.0 (10-4-stable; go1.8.5; linux/amd64)" 0.002182
+2018-01-26_11:21:56.54433 2018/01/26 11:21:56 error: POST "/api/v4/jobs/request": badgateway: failed after 0s: dial unix /var/opt/gitlab/gitlab-rails/sockets/gitlab.socket: connect: connection refused
+2018-01-26_11:21:56.54473 172.17.0.6:30080 @ - - [2018-01-26 11:21:56.542511101 +0000 UTC m=+30.688879931] "POST /api/v4/jobs/request HTTP/1.1" 502 24 "" "gitlab-runner 10.4.0 (10-4-stable; go1.8.5; linux/amd64)" 0.001702
+2018-01-26_11:21:56.78821 2018/01/26 11:21:56 error: GET "/help": badgateway: failed after 0s: dial unix /var/opt/gitlab/gitlab-rails/sockets/gitlab.socket: connect: connection refused
+2018-01-26_11:21:56.78866 localhost:30080 @ - - [2018-01-26 11:21:56.786239219 +0000 UTC m=+30.932608026] "GET /help HTTP/1.1" 502 2916 "" "curl/7.56.1" 0.001848
+2018-01-26_11:22:04.40755 2018/01/26 11:22:04 error: POST "/api/v4/jobs/request": badgateway: failed after 0s: dial unix /var/opt/gitlab/gitlab-rails/sockets/gitlab.socket: connect: connection refused
+2018-01-26_11:22:04.40798 172.17.0.6:30080 @ - - [2018-01-26 11:22:04.405530834 +0000 UTC m=+38.551899651] "POST /api/v4/jobs/request HTTP/1.1" 502 24 "" "gitlab-runner 10.4.0 (10-4-stable; go1.8.5; linux/amd64)" 0.001889
+2018-01-26_11:22:11.73546 2018/01/26 11:22:11 error: POST "/api/v4/jobs/request": badgateway: failed after 0s: dial unix /var/opt/gitlab/gitlab-rails/sockets/gitlab.socket: connect: connection refused
+2018-01-26_11:22:11.73591 172.17.0.6:30080 @ - - [2018-01-26 11:22:11.73085105 +0000 UTC m=+45.877219899] "POST /api/v4/jobs/request HTTP/1.1" 502 24 "" "gitlab-runner 10.4.0 (10-4-stable; go1.8.5; linux/amd64)" 0.004363
+2018-01-26_11:22:21.11925 2018/01/26 11:22:21 error: POST "/api/v4/jobs/request": badgateway: failed after 0s: dial unix /var/opt/gitlab/gitlab-rails/sockets/gitlab.socket: connect: connection refused
+2018-01-26_11:22:21.11972 172.17.0.6:30080 @ - - [2018-01-26 11:22:21.117147153 +0000 UTC m=+55.263515966] "POST /api/v4/jobs/request HTTP/1.1" 502 24 "" "gitlab-runner 10.4.0 (10-4-stable; go1.8.5; linux/amd64)" 0.001960
+2018-01-26_11:22:27.78101 2018/01/26 11:22:27 error: keywatcher: pubsub receive: EOF
+2018-01-26_11:22:27.78145 2018/01/26 11:22:27 redis: dialing "tcp", "redis:6379"
+2018-01-26_11:22:27.78187 2018/01/26 11:22:27 error: keywatcher: dial tcp 172.17.0.3:6379: getsockopt: connection refused
+2018-01-26_11:22:27.88208 2018/01/26 11:22:27 redis: dialing "tcp", "redis:6379"
